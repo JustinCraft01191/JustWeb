@@ -1,0 +1,71 @@
+{
+    "status": "ok",
+    "totalResults": 5,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Nigeria's big push to grow its own coconuts",
+            "description": "Most of Nigeria has the perfect climate for growing coconuts and yet it imports 70% of the popular fruit.",
+            "url": "https://www.bbc.co.uk/news/world-africa-62037314",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/76E4/production/_125863403_mediaitem125795983.jpg",
+            "publishedAt": "2022-07-16T00:29:29Z",
+            "content": "By Ijeoma NdukweBBC News, Lagos\r\nMost of Nigeria has the perfect climate for growing coconuts and yet it imports 70% of the popular fruit, which is widely used as a snack, a drink and to make everyth\u2026 [+6722 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "Ijeoma Ndukwe - BBC News, Lagos",
+            "title": "Nigeria's big push to grow its own coconuts",
+            "description": "Most of Nigeria has the perfect climate for growing coconuts and yet it imports 70% of the popular fruit.",
+            "url": "https://news.yahoo.com/nigerias-big-push-grow-own-002929553.html",
+            "urlToImage": "https://s.yimg.com/uu/api/res/1.2/jam.z2kv1uuQYlQrTo7mPA--~B/aD01NDk7dz05NzY7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/bbc_us_articles_995/e0600bb2e1357375e68105e6f74e6202",
+            "publishedAt": "2022-07-16T00:29:29Z",
+            "content": "Coconut tree at LASCODA plantation\r\nMost of Nigeria has the perfect climate for growing coconuts and yet it imports 70% of the popular fruit, which is widely used as a snack, a drink and to make ever\u2026 [+6615 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Big News Network"
+            },
+            "author": null,
+            "title": "The other oil wars",
+            "description": "By Pushpesh PantNew Delhi [India], June 23 (ANI): The war in Ukraine has sent the oil prices sky rocketing and clouds are gathering on the middle eastern horizon of oil wars in near future. This has distracted our attention from the other oil crisis that is b\u2026",
+            "url": "https://www.bignewsnetwork.com/news/272596630/the-other-oil-wars",
+            "urlToImage": "https://cdn.bignewsnetwork.com/ani1655989379.jpg",
+            "publishedAt": "2022-06-23T12:55:25Z",
+            "content": "By Pushpesh PantNew Delhi [India], June 23 (ANI): The war in Ukraine has sent the oil prices sky rocketing and clouds are gathering on the middle eastern horizon of oil wars in near future. This has \u2026 [+6727 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Blogspot.com"
+            },
+            "author": "noreply@blogger.com (Retired Analyst)",
+            "title": "CPP/Fight the US-Marcos II regime, and advance the people\u2019s war!",
+            "description": "Propaganda statement posted to the Communist Party of the Philippines (CPP) Website (Jun 30, 2022): Fight the US-Marcos II regime, and advance the people\u2019s war! Communist Party of the PhilippinesJune 30, 2022By rigging the May 9 elections through pre-programm\u2026",
+            "url": "http://retiredanalyst.blogspot.com/2022/06/cppfight-us-marcos-ii-regime-and.html",
+            "urlToImage": "https://lh3.googleusercontent.com/blogger_img_proxy/ABLy4ExZlnI4ufJzS75isg_RzwxN_SOFeEWG-nqPfQqN3uRQSB390c4ZgldrrK2LtN1K_pIAu1NGjCiga7nnXzDeWRvq1mlu_gmi8rzDBQ4RHwkV_0UtCXzpaXWA0jAAAHFVBLed-3ctbk5dlsDQ5NwVcFY=w1200-h630-p-k-no-nu",
+            "publishedAt": "2022-06-30T16:33:00Z",
+            "content": "Propaganda statement posted to the Communist Party of the Philippines (CPP) Website (Jun 30, 2022): Fight the US-Marcos II regime, and advance the people\u2019s war!By rigging the May 9 elections through \u2026 [+27691 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gnlm.com.mm"
+            },
+            "author": "Global New Light of Myanmar",
+            "title": "Thailand remains top trade partner among neighbouring countries in Q1",
+            "description": "The bilateral trade with neighbouring Thailand is recorded as the highest among the neighbouring countries, amounting to US$1.315 billion in [\u2026]",
+            "url": "https://www.gnlm.com.mm/thailand-remains-top-trade-partner-among-neighbouring-countries-in-q1/",
+            "urlToImage": "https://cdn.myanmarseo.com/file/client-cdn/gnlm/wp-content/uploads/2015/06/LOCAL-NEWS.png",
+            "publishedAt": "2022-07-14T05:17:57Z",
+            "content": "The bilateral trade with neighbouring Thailand is recorded as the highest among the neighbouring countries, amounting to US$1.315 billion in the first quarter of the current financial year 2022-2023,\u2026 [+1519 chars]"
+        }
+    ]
+}

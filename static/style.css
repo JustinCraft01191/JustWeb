@@ -1,0 +1,270 @@
+h1,h2,h3{
+    text-align:center;
+    line-height: 2rem;
+}
+
+/* WA Button */
+.float{
+	position:fixed;
+	width:100px;
+	height:100px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:60px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.column-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid {
+    padding: 8% 15%;
+}
+
+/* navbar*/
+.navbar-custom .container-fluid{
+    padding:1% 3%
+}
+.dropdown-item{
+    color: rgba(255,255,255,.5);
+}
+/* header */
+#mainpage-header{
+    height:1000px;
+}
+#header{
+    height: 400px;
+}
+.title-background{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.main-title-text{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.title-text{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+hr.title-hr{
+    border-top: 20px dotted rgba(255,255,255,0.4);
+    width:40%
+}
+
+
+/* about us */
+.lg-image{
+    width: 400px;
+}
+
+.ab-us-flex-content{
+    padding: 2% 2%;
+}
+
+
+/* product */
+#products {
+    background-color:#CEB697;
+}
+
+.products-title{
+    color: black;
+}
+.card-flexbox{
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.brown-background{
+    background-color:#CEB697;
+    padding: 20px;
+    border: none;
+}
+.see-more{
+  margin-top: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  background: rgb(101, 67, 33);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.8s;
+}
+
+/*articles*/
+.md-image{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    margin: auto;
+}
+.article_section{
+    margin-top : 50px;
+    text-align: center;
+}
+.news-box{
+    display: flex;
+    flex-direction: column;
+    padding : 30 px;
+    justify-content:center;
+    text-align:left;
+}
+.article_title{
+    color:#000000;
+}
+.article_title:visited, .article_title:active{
+    color:#000000;
+    style:none;
+}
+
+/*footer*/
+#footer{
+    color:#ffffff;
+    text-align: center;
+    background-color: #283314;
+    padding: 7% 15%;
+}
+.icons{
+  padding-bottom: 5%;
+}
+.icons > *{
+  padding-left: 1%
+}
+
+/* Articles Page */
+
+.flexbox-articles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles-image{
+    width: 300px;
+    height: auto;
+    margin-right: 25px;
+    object-fit:cover;
+}
+
+/* Contact Us Page */
+.gmap_canvas{
+    margin-top:20%;
+    margin-bottom:50%;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:90%;
+    width:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!
+    important;
+    height:90%;
+    width:100%;
+}
+.column-flexbox-justify-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+.fa-fw{
+    font-size:25px;
+}
+@media only screen and (max-width: 992px){
+    .navbar-custom{
+        background-color:rgba(41, 43, 44, 1);
+    }
+    .dropdown-custom{
+        background-color:rgba(0, 0, 0, 0);
+        border:0;
+    }
+    .flexbox{
+       flex-direction: column;
+    }
+    .float{
+       font-size: 40px;
+       width: 70px;
+       height: 70px;
+    }
+    .md-image{
+        height:250px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #mainpage-header{
+        height:800px;
+    }
+    .title-background{
+
+    }
+    .main-title-text{
+        top:450px;
+    }
+    .lg-image{
+        width: 300px;
+    }
+    .float{
+       font-size: 30px;
+       width: 60px;
+       height: 60px;
+    }
+    .articles-image{
+        width: 100%;
+        height: 100%;
+        margin-right: 0;
+
+    }
+    .flexbox-articles{
+        flex-direction:column;
+    }
+    #map{
+     width:100%;
+    }
+}

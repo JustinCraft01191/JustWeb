@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/2b7bdad9a4.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!--Bootstrap Script-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <style>iframe {width:100%;height:100%;}
+    a:link,a:hover,a:visited{color:black; text-decoration:none;}</style>
+
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark navbar-custom fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{url_for('homepage')}}">COMPANY LOGO</a>
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('homepage')}}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('about_us')}}">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{{url_for('products')}}">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('articles')}}">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="height:50px;"></div>
+<section id="header">
+    <img src="{{ url_for('static', filename='image/background.png') }}" class="title-background">
+    <div class="container-fluid title-text">
+        <h2>COMPANY NAME</h2>
+        <hr class="title-hr">
+        <h4>Lorem ipsum dolor sit amet</h4>
+    </div>
+</section>
+<section class="ftco-section">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters mb-5">
+                        <div class="col-md-7">
+                            <div class="contact-wrap w-100 p-md-5 p-4">
+                                <h3 class="mb-4">Write Your Messege</h3>
+                                <div id="form-message-warning" class="mb-4"></div>
+                                <div id="form-message-success" class="mb-4">
+                                    {% if msg_sent == 1 %}
+                                    Something went wrong, please try again!
+                                    {% elif msg_sent == 2 %}
+                                    Your message was sent, thank you!
+                                    {% else %}
+                                    Please write your message here!
+                                    {% endif %}
+                                </div>
+
+                                <form action="{{url_for('form_entry')}}" method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label" for="name">Full Name</label>
+                                                <input type="text" class="form-control" name="name" id="name"
+                                                       placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label" for="email">Email Address</label>
+                                                <input type="email" class="form-control" name="email" id="email"
+                                                       placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="subject">Subject</label>
+                                                <input type="text" class="form-control" name="subject" id="subject"
+                                                       placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="message">Message</label>
+                                                <textarea name="message" class="form-control" id="message" cols="30"
+                                                          rows="4" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="submit" value="Send Message" class="btn btn-primary">
+                                                <div class="submitting"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-5 d-flex">
+                            <div id="map">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe width="100%" height="90%" id="gmap_canvas"
+                                                src="https://maps.google.com/maps?q=afterhour%20pik%20jakarta&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                                frameborder="0" scrolling="no" marginheight="0"
+                                                marginwidth="0"></iframe>
+                                        <a href="https://123movies-to.org"></a><br>
+                                        <a href="https://www.embedgooglemap.net">google maps on your website</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="dbox w-100 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="fa-solid fa-map fa-fw"></span>
+                                </div>
+                                <div class="text">
+                                    <p><strong>Address</strong></p>
+                                       <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dbox w-100 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="fa-solid fa-square-phone fa-fw"></span>
+                                </div>
+                                <div class="text">
+                                    <p><strong>Mobile</strong></p>
+                                       <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dbox w-100 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="fa-brands fa-whatsapp-square fa-fw"></span>
+                                </div>
+                                <div class="text">
+                                    <p><strong>Whatsapp</strong></p>
+                                       <p><a href="#">+ 1235 2355 98</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dbox w-100 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="fa-solid fa-square-envelope fa-fw"></span>
+                                </div>
+                                <div class="text">
+                                    <p><strong>Email</strong></p>
+                                       <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="icons">
+        <i class="fa-brands fa-twitter"> </i>
+        <i class="fa-brands fa-facebook-f"> </i>
+        <i class="fa-brands fa-instagram"> </i>
+        <i class="fa-solid fa-envelope"> </i>
+    </div>
+    <p>© Copyright 2022 </p>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
